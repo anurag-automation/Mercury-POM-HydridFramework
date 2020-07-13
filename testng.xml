@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Login Test">
+    <classes>
+    <class name="co.mercury.qa.testcases.LoginPageTest"/>
+     </classes>
+  </test>
+  <test thread-count="5" name="Flight Finder Test">
+
+    <classes>
+      <class name="co.mercury.qa.testcases.FlightFinderTest"/>
+       </classes>
+  </test>
+  
+   <test thread-count="5" name="Select Flight Test">
+   
+   <parameter name="flightType" value="oneway"/>  
+   
+    <classes>
+           <class name="co.mercury.qa.testcases.SelectFlightTest"/>
+    </classes>
+  </test> <!-- MercuryPageObjectModelTest -->
+</suite> <!-- Suite -->
